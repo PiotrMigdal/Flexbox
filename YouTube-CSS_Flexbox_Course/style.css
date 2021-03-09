@@ -1,0 +1,45 @@
+
+
+* {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(61, 61, 61);
+}
+.container-web .home {
+    background: rgb(253, 253, 120);
+    flex: 2; /*gives this item twice width*/
+}
+.container-web .search {
+    background: rgb(253, 120, 120);
+}
+.container-web .logout {
+    background: rgb(120, 133, 253);
+}
+.container-web .profile {
+    background: rgb(124, 253, 120);
+}
+
+
+
+
+.container-web {
+    border: 5px solid rgb(100, 128, 0);
+    display: flex;
+}
+
+.container-web div {
+    flex: 1;
+    /*Gives each item same width,
+    this is the shorthend of:
+    flex: 1 1 0;
+    which is the shorthend of:
+    flex-grow: 1; - depends on other elements and distributes free spaces between elements if 0 then empty space is empty
+    flex-shrink: 1 - similar to flex-grow but about shrinking, if element has bigger shrink than other it shrinks faster. If 0 not shirnk;
+    flex-basis: 0; - Definises where element stop growing and start shrinking. Set the basis width of the element, can shrink element but if set for example as 200px it will stay this when wider*/
+}
+
+.container-web .home {
+    flex: 2; /*gives this item twice width*/
+}
